@@ -35,3 +35,11 @@
   background-color: #4056A1;
   padding: .5% 2%;
 }
+
+.danger {
+  color: orange
+}
+
+.over {
+  color: rgb(224, 24, 24)
+}
