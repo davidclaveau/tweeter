@@ -1,7 +1,7 @@
 .new-tweet {
   display: flex;
   flex-direction: column;
-  padding: 2% 10%;
+  padding: 40px 0;
 }
 
 .new-tweet form {
@@ -17,7 +17,7 @@
   width: 100%;
   color: #3f4246;
   background-color: transparent;
-  border-bottom: #3f4246 2px solid;
+  border-bottom: #3f4246 3px solid;
   margin-top: 1em;
   outline: none;
 }

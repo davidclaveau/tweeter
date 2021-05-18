@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/tweets.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -24,6 +25,7 @@
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+    <script type="text/javascript" src="/scripts/tweet-footer-options.js"></script>
   </head>
 
   <body>
@@ -32,7 +34,7 @@
       <span class="title-name">Tweeter</span>
       <div class="write-tweet-nav">
         <span><strong>Write</strong>&nbsp a new tweet</span>
-        <a href="#tweet-text"><i class="fas fa-angle-double-down"></i></a>
+        <a href="#compose-tweet"><i class="fas fa-angle-double-down"></i></a>
       </div>
     </nav>
 
@@ -47,18 +49,43 @@
   </header>
 
     <!-- Page-specific (main) content here -->
-    <main class="container">
-      <section class="new-tweet">
-        <h2>Compose Tweet</h2>
-        <label for="tweet-text">What are you humming about?</label>
-        <form action="/tweets" method="post">
-          <textarea name="text" id="tweet-text" placeholder="My thoughts..."></textarea>
-          <div class="tweet-info">
-            <button type="submit">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
+    <main class="container"><main class="container">
+      <div class="tweet-container">
+        <section class="new-tweet" id="compose-tweet">
+          <h2>Compose Tweet</h2>
+          <label for="tweet-text">What are you humming about?</label>
+          <form action="/tweets" method="post">
+            <textarea name="text" id="tweet-text" placeholder="My thoughts..."></textarea>
+            <div class="tweet-info">
+              <button type="submit">Tweet</button>
+              <output name="counter" class="counter" for="tweet-text">140</output>
+            </div>
+          </form>
+        </section>
+        <article class="tweet">
+          <header>
+            <div>
+              <img src="https://i.imgur.com/73hZDYK.png">
+              <span>Name</span>
+            </div>
+            <span>@OscarGamble</span>
+          </header>
+          <div class="content">
+            "They don't think it be like it is, but it do"
           </div>
-        </form>
-      </section>
+          <footer>
+            <span>Date</span>
+            <div>
+              <i class="fas fa-flag"></i>
+              <i class="fas fa-retweet"></i>
+              <i class="fas fa-heart"></i>
+            </div>
+          </footer>
+        </article>
+      </div>
     </main>
+    <footer>
+      <p>Footer content</p>
+    </footer>
   </body>
 </html>
