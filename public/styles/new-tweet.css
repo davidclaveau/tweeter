@@ -1,45 +1,46 @@
-.new-tweet {
+section.new-tweet {
   display: flex;
   flex-direction: column;
   padding: 40px 0;
 }
 
-.new-tweet form {
+section.new-tweet form {
  display: flex;
  flex-direction: column;
 }
 
-#tweet-text {
+section.new-tweet form textarea#tweet-text {
   border: none;
-  resize: none;
-  wrap: soft;
-  height: 30px;
+  height: 60px;
+  padding-top: 25px;
+  margin-top: 15px;
   width: 100%;
   color: #3f4246;
   background-color: transparent;
   border-bottom: #3f4246 3px solid;
-  margin-top: 1em;
   outline: none;
+  overflow: hidden;
 }
 
-.tweet-info {
+section.new-tweet form div.tweet-info {
   display: flex;
   justify-content: space-between;
   font-family: 'Bungee', sans-serif;
   padding: 2% 0;
 }
 
-.tweet-info button{
+section.new-tweet form div.tweet-info button{
+  cursor: pointer;
   border: 0px solid;
   color: white;
   background-color: #4056A1;
   padding: .5% 2%;
 }
 
-.danger {
+.danger-char-limit {
   color: orange
 }
 
-.over {
+.over-char-limit {
   color: rgb(224, 24, 24)
 }
