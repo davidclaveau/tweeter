@@ -9,23 +9,20 @@ nav {
   padding: .5em 1.5em
 }
 
-nav span {
-  display: flex;
-  align-items: flex-end;
-}
-
-.write-tweet-nav {
+div.write-tweet-nav {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
 }
 
-.title-name {
+span.title-name {
+  display: flex;
+  align-items: flex-end;
   font-family: 'Bungee', sans-serif;
   font-size: 2em;
 }
 
-.fa-angle-double-down {
+i.fa-angle-double-down {
   color: red;
 }

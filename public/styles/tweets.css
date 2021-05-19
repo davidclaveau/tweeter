@@ -5,6 +5,10 @@ article.tweet {
   border: 3px solid #3f4246 ; ;
 }
 
+article.tweet:hover {
+  box-shadow: 5px 5px lightgrey;
+}
+
 article.tweet header {
   display: flex;
   flex-direction: row;

@@ -9,7 +9,7 @@ section.new-tweet form {
  flex-direction: column;
 }
 
-section.new-tweet form textarea#tweet-text {
+textarea#tweet-text {
   border: none;
   height: 60px;
   padding-top: 25px;
@@ -22,14 +22,14 @@ section.new-tweet form textarea#tweet-text {
   overflow: hidden;
 }
 
-section.new-tweet form div.tweet-info {
+div.tweet-info {
   display: flex;
   justify-content: space-between;
   font-family: 'Bungee', sans-serif;
   padding: 2% 0;
 }
 
-section.new-tweet form div.tweet-info button{
+div.tweet-info button{
   cursor: pointer;
   border: 0px solid;
   color: white;

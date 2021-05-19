@@ -6,15 +6,16 @@ $(document).ready(() => {
     let count = 140;
     const charCount = $(this).val().length;
     const newCount = count - charCount;
+    const $counter = $(".counter");
 
-    $(".counter").removeClass("danger-char-limit").removeClass("over-char-limit");
+    $counter.removeClass("danger-char-limit").removeClass("over-char-limit");
 
     if (newCount <= 10 && newCount >= 0) {
-      $(".counter").removeClass("over-char-limit").addClass("danger-char-limit");
+      $counter.removeClass("over-char-limit").addClass("danger-char-limit");
     } else if (newCount < 0) {
-      $(".counter").removeClass("danger-char-limit").addClass("over-char-limit");
+      $counter.removeClass("danger-char-limit").addClass("over-char-limit");
     }
 
-    $(".counter").html(newCount);
+    $counter.html(newCount);
   });
 });
