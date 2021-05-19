@@ -2,7 +2,8 @@ article.tweet {
   display: flex;
   flex-direction: column;
   padding: 3% 3%;
-  border: 3px solid #3f4246 ; ;
+  border: 3px solid #3f4246;
+  margin-bottom: 50px;
 }
 
 article.tweet:hover {
@@ -22,12 +23,12 @@ article.tweet header img {
   height: 50px;
 }
 
-article.tweet header div {
+header div.user-name {
   display: flex;
   align-items: center;
 }
 
-article.tweet header div span {
+header div.user-name span {
   padding-left: 10px;
 }
 

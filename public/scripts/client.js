@@ -1,25 +1,32 @@
-/*
- * Client-side JS logic goes here
- * jQuery is already loaded
- * Reminder: Use (and do all your DOM work in) jQuery's document ready function
- */
-
 $(document).ready(() => {
 
-  const tweetData = {
-    "user": {
-      "name": "Jaden",
-      "avatars": "https://i.imgur.com/73hZDYK.png",
-      "handle": "@JadenSmith"
-    },
-    "content": {
-      "text": "How can mirrors be real if our eyes aren't real"
-    },
-    "created_at": 1621363278171
+  
+  const loadTweets = () => {
+    $.ajax({
+      url: '/tweets',
+      method: 'GET',
+    })
+      .then((result) => {
+        renderTweets(result)
+      })
+      .catch(err => {
+        console.log('Unable to get Tweets');
+        console.log(err);
+      })
+  };
+  
+  const allTweets = loadTweets();
+
+  console.log("allTweets", allTweets)
+
+  const renderTweets = (tweets) => {
+    tweets.forEach(tweet => {
+      const $tweet = createTweetElement(tweet);
+      $('#tweets-container').append($tweet)
+    });
   }
   
   const createTweetElement = (data) => {
-
     const userName = data.user.name;
     const userAvatar = data.user.avatars;
     const userHandle = data.user.handle;
@@ -29,7 +36,7 @@ $(document).ready(() => {
     const returnVal = `
     <article class="tweet">
       <header>
-        <div>
+        <div class="user-name">
           <img src="${userAvatar}">
           <span>${userName}</span>
         </div>
@@ -51,11 +58,24 @@ $(document).ready(() => {
 
     return returnVal;
   };
-  
-  const $tweet = createTweetElement(tweetData);
-  
-  // Test / driver code (temporary)
-  console.log($tweet); // to see what it looks like
-  $('#tweets-container').append($tweet); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
 
+  // POST tweets
+  $("form").submit((event) => {
+    event.preventDefault();
+    const $form = $("form")
+    const serialized = ($form.serialize());
+
+    $.ajax({
+      url: '/tweets',
+      method: 'POST',
+      data: serialized,
+    })
+      .then((result) => {
+        console.log('success');
+      })
+      .catch(err => {
+        console.log('Unable to submit Tweet');
+        console.log(err);
+      })
+  })
 });

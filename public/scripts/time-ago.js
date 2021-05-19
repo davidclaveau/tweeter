@@ -1,8 +1,11 @@
 $(document).ready(() => {
   
   const $spanTimeAgo = $("span.time-ago")
-  const time = $spanTimeAgo.html();
-  const timeAgo = timeago.format(time);
-  $spanTimeAgo.html(timeAgo);
+
+  $spanTimeAgo.on("load", () => {
+    const time = $spanTimeAgo.html();
+    const timeAgo = timeago.format(time);
+    $spanTimeAgo.html(timeAgo);
+  })
 
 });
