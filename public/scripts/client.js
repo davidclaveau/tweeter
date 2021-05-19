@@ -64,18 +64,26 @@ $(document).ready(() => {
     event.preventDefault();
     const $form = $("form")
     const serialized = ($form.serialize());
+    const tweetChars = $("#tweet-text").val();
 
-    $.ajax({
-      url: '/tweets',
-      method: 'POST',
-      data: serialized,
-    })
-      .then((result) => {
-        console.log('success');
+    if (tweetChars.length > 140) {
+      alert("Too Long")
+    } else if (tweetChars.length === 0) {
+      alert("Nothing written")
+    } else {
+      $.ajax({
+        url: '/tweets',
+        method: 'POST',
+        data: serialized,
       })
-      .catch(err => {
-        console.log('Unable to submit Tweet');
-        console.log(err);
-      })
+        .then((result) => {
+          console.log('success');
+        })
+        .catch(err => {
+          console.log('Unable to submit Tweet');
+          console.log(err);
+        })
+    }
+
   })
 });
