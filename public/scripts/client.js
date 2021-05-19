@@ -68,7 +68,7 @@ $(document).ready(() => {
 
     if (tweetChars.length > 140) {
       alert("Too Long")
-    } else if (tweetChars.length === 0) {
+    } else if (tweetChars.length === 0 || tweetChars === null) {
       alert("Nothing written")
     } else {
       $.ajax({
