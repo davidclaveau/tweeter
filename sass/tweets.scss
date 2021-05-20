@@ -35,10 +35,10 @@ article.tweet footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border-top: 3px solid #3f4246;
+  border-top: 3px solid #3f4246 ;
 }
 
-article.tweet footer span.time-ago {
+article.tweet footer span.time-ago{
   font-size: 0.8em;
   margin-top: 0.2em;
 }
@@ -49,5 +49,5 @@ article.tweet footer div i {
 }
 
 article.tweet footer div i:hover {
-  color: orange;
+  color: orange
 }

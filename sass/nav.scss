@@ -6,7 +6,7 @@ nav {
   width: 100%;
   color: #FFFFFF;
   background-color: #4056A1;
-  padding: 0.5em 1.5em;
+  padding: 0.5em 1.5em
 }
 
 div.write-tweet-nav {
@@ -23,25 +23,20 @@ div.write-tweet-nav {
 span.title-name {
   display: flex;
   align-items: flex-end;
-  font-family: "Bungee", sans-serif;
+  font-family: 'Bungee', sans-serif;
   font-size: 2rem;
 }
 
 @keyframes example {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+  0%   {transform: translateY(0);}
+  50%  {transform: translateY(10px);}
+  100% {transform: translateY(0px);}
 }
+
 i.fa-angle-double-down {
-  color: red;
-  top: 0;
-  animation-name: example;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
+color: red;
+top: 0;
+animation-name: example;
+animation-duration: 2s;
+animation-iteration-count: infinite;
 }

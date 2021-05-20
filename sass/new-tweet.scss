@@ -5,8 +5,8 @@ section.new-tweet {
 }
 
 section.new-tweet form {
-  display: flex;
-  flex-direction: column;
+ display: flex;
+ flex-direction: column;
 }
 
 section.new-tweet h2 {
@@ -27,7 +27,7 @@ div.error-message i {
   padding: 0.2em;
 }
 
-div.error-message span {
+div.error-message span{
   padding-left: 0.2em;
 }
 
@@ -47,11 +47,11 @@ textarea#tweet-text {
 div.tweet-info {
   display: flex;
   justify-content: space-between;
-  font-family: "Bungee", sans-serif;
+  font-family: 'Bungee', sans-serif;
   padding: 0.7em 0;
 }
 
-div.tweet-info button {
+div.tweet-info button{
   cursor: pointer;
   border: 0px solid;
   color: white;
@@ -60,9 +60,9 @@ div.tweet-info button {
 }
 
 .danger-char-limit {
-  color: orange;
+  color: orange
 }
 
 .over-char-limit {
-  color: #e01818;
+  color: rgb(224, 24, 24)
 }
