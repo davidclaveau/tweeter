@@ -1,16 +1,9 @@
 const renderTweets = (tweets) => {
-  // Check if it's an array of tweets
-  // Or a single tweet
-  if (Array.isArray(tweets)) {
-    tweets.forEach(tweet => {
-      const $tweet = createTweetElement(tweet);
-      $('#tweets-container').prepend($tweet)
-    });
-  } else {
-    const $tweet = createTweetElement(tweets);
-    $('#tweets-container').prepend($tweet)
-  }
-}
+  tweets.forEach(tweet => {
+    const $tweet = createTweetElement(tweet);
+    $('#tweets-container').prepend($tweet);
+  });
+};
 
 const createTweetElement = (data) => {
   const userName = data.user.name;
@@ -40,7 +33,7 @@ const createTweetElement = (data) => {
       </div>
     </footer>
   </article>
-  `
+  `;
 
   return returnVal;
 };

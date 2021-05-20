@@ -1,5 +1,5 @@
 section.new-tweet {
-  display: flex;
+  display: none;
   flex-direction: column;
   padding: 40px 0;
 }
@@ -60,4 +60,8 @@ div.tweet-info button{
 
 .over-char-limit {
   color: rgb(224, 24, 24)
+}
+
+#tweets-container {
+  padding-top: 15px;
 }

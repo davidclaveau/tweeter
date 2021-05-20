@@ -30,6 +30,7 @@
     <script type="text/javascript" src="/scripts/helper-functions.js"></script>
     <script type="text/javascript" src="/scripts/render-tweets.js"></script>
     <script type="text/javascript" src="/scripts/post-tweet.js"></script>
+    <script type="text/javascript" src="/scripts/form-toggle.js"></script>
   </head>
 
   <body>
@@ -38,7 +39,9 @@
       <span class="title-name">Tweeter</span>
       <div class="write-tweet-nav">
         <span><strong>Write</strong>&nbsp a new tweet</span>
-        <a href="#write-new-tweet"><i class="fas fa-angle-double-down"></i></a>
+        <div>
+          <a href="#compose-tweet"><i class="fas fa-angle-double-down"></i></a>
+        </div>
       </div>
     </nav>
 
@@ -54,11 +57,8 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container">
-      <section id="write-new-tweet" class="new-tweet">
-        <div class="error-message">
-          <i class="fas fa-exclamation-circle"></i>
-          <span><strong>Character limit exceeded!</strong></span>
-        </div>
+      <section class="new-tweet">
+        <div id="compose-tweet" class="error-message"></div>
           <h2>Compose Tweet</h2>
           <label for="tweet-text">What are you humming about?</label>
           <form action="/tweets" method="post">

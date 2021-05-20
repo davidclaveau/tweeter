@@ -20,10 +20,9 @@ $(document).ready(() => {
         <i class="fas fa-exclamation-circle"></i>
         <span><strong>Cannot submit an empty tweet!</strong></span>
       `).slideDown();
-      
     } else {
       // Reset tweet submitter and counter
-      $error.slideUp().empty();
+      $error.slideUp();
       $tweetText.val("");
       $counter.html("140");
       $.ajax({
@@ -34,13 +33,13 @@ $(document).ready(() => {
         // Post tweet to the homepage
         .then(() => {
           $.ajax({
-              url: '/tweets',
-              method: 'GET',
-            })
-              .then((result) => {
-                renderTweets(result[result.length - 1]);
-              })
-        })
+            url: '/tweets',
+            method: 'GET',
+          })
+            .then((result) => {
+              renderTweets([result[result.length - 1]]);
+            });
+        });
     }
-  })
+  });
 });

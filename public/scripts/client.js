@@ -6,12 +6,12 @@ $(document).ready(() => {
       method: 'GET',
     })
       .then((result) => {
-        renderTweets(result)
+        renderTweets(result);
       })
       .catch(err => {
         console.log('Unable to get Tweets');
         console.log(err);
-      })
+      });
   };
   loadTweets();
 });
