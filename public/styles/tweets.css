@@ -1,26 +1,25 @@
 article.tweet {
   display: flex;
   flex-direction: column;
-  padding: 3% 3%;
+  padding: 0.8em;
   border: 3px solid #3f4246;
-  margin-bottom: 50px;
+  margin-bottom: 1.5em;
 }
 
 article.tweet:hover {
-  box-shadow: 5px 5px lightgrey;
+  box-shadow: 0.3em 0.3em lightgrey;
 }
 
-article.tweet header {
+article.tweet > header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: auto;;
-  padding: 0;
+  height: auto;
   background-color: transparent;
 }
 
 article.tweet header img {
-  height: 50px;
+  height: 2em;
 }
 
 header div.user-name {
@@ -29,13 +28,7 @@ header div.user-name {
 }
 
 header div.user-name span {
-  padding-left: 10px;
-}
-
-article.tweet div.content {
-  height: auto;
-  padding: 0 10px;
-  margin: 25px 0;
+  padding-left: .5em;
 }
 
 article.tweet footer {
@@ -46,7 +39,7 @@ article.tweet footer {
 }
 
 article.tweet footer div i {
-  font-size: 14px;
+  font-size: .8em;
   cursor: pointer;
 }
 

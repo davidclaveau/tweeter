@@ -5,6 +5,7 @@
  */
 html {
   box-sizing: border-box;
+  font-size: 24px;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -18,7 +19,6 @@ html {
 body {
   color: #545149;
   background-color: #f4f1ec;
-  font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -26,8 +26,55 @@ body {
 * Additional CSS can be defined below or in other CSS files, as per instructions
 */
 
+div.dynamic-content {
+  display: flex;
+  flex-direction: row;
+}
+
 main {
   display: flex;
   flex-direction: column;
-  padding: 0 5%;
+  flex: 5;
+  margin: 8em 2em 0 1.75em
+}
+
+@media screen and (max-width: 1024px) {
+
+  main {
+    margin: 2em 1.75em
+  }
+
+  div.dynamic-content {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 500px) and (max-width: 760px) {
+  html {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 450px) and (max-width: 500px) {
+  html {
+    font-size: 19px;
+  }
+}
+
+@media screen and (max-width: 400px) and (max-width: 450px) {
+  html {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 350px) and (max-width: 450px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 300px) and (max-width: 350px) {
+  html {
+    font-size: 13px;
+  }
 }
