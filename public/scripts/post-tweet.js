@@ -40,6 +40,6 @@ $(document).ready(() => {
               renderTweets([result[result.length - 1]]);
             });
         });
-    }
+    };
   });
 });

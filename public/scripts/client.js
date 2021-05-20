@@ -13,5 +13,6 @@ $(document).ready(() => {
         console.log(err);
       });
   };
+  
   loadTweets();
 });

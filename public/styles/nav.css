@@ -15,7 +15,9 @@ div.write-tweet-nav {
   align-items: center;
   text-align: center;
   justify-content: flex-end;
+  margin-top: 2.6em;
   font-size: 1em;
+  cursor: pointer;
 }
 
 span.title-name {
@@ -33,7 +35,6 @@ span.title-name {
 
 i.fa-angle-double-down {
 color: red;
-cursor: pointer;
 top: 0;
 animation-name: example;
 animation-duration: 2s;
