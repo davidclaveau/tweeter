@@ -10,7 +10,7 @@ const createTweetElement = (data) => {
   const userAvatar = data.user.avatars;
   const userHandle = data.user.handle;
   const contentText = data.content.text;
-  const createdAt = data.created_at;
+  const createdAt = daysSince(data.created_at);
 
   const returnVal = `
   <article class="tweet">

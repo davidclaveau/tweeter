@@ -28,7 +28,7 @@ header div.user-name {
 }
 
 header div.user-name span {
-  padding-left: .5em;
+  padding-left: 0.5em;
 }
 
 article.tweet footer {
@@ -38,8 +38,13 @@ article.tweet footer {
   border-top: 3px solid #3f4246 ;
 }
 
+article.tweet footer span.time-ago{
+  font-size: 0.8em;
+  margin-top: 0.2em;
+}
+
 article.tweet footer div i {
-  font-size: .8em;
+  font-size: 0.8em;
   cursor: pointer;
 }
 

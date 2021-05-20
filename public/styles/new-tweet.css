@@ -24,11 +24,11 @@ div.error-message {
 
 div.error-message i {
   font-size: 1em;
-  padding: .2em;
+  padding: 0.2em;
 }
 
 div.error-message span{
-  padding-left: .2em;
+  padding-left: 0.2em;
 }
 
 textarea#tweet-text {
@@ -48,7 +48,7 @@ div.tweet-info {
   display: flex;
   justify-content: space-between;
   font-family: 'Bungee', sans-serif;
-  padding: .7em 0;
+  padding: 0.7em 0;
 }
 
 div.tweet-info button{
