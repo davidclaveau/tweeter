@@ -29,15 +29,17 @@ article.tweet > header {
   img {
     height: 2em;
   }
+
+  span {
+    display: flex;
+    align-items: center;
+    padding-left: 0.5em;
+  }
 }
 
 header div.user-name {
   display: flex;
   align-items: center;
-
-  span {
-    padding-left: 0.5em;
-  }
 }
 
 article.tweet footer {
