@@ -1,7 +1,6 @@
 /*
  * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
  * https://css-tricks.com/international-box-sizing-awareness-day/
- * Do not modify these two selectors, please
  */
 @use 'base';
 
@@ -13,20 +12,11 @@
   box-sizing: inherit;
 }
 
-/*
- * Global layout stuff
- */
-
-
 body {
   color: base.$primary-text-color;
   background-color: #f4f1ec;
-  font-family: base.$secondary-text-color;
+  font-family: base.$secondary-font;
 }
-
-/*
-* Additional CSS can be defined below or in other CSS files, as per instructions
-*/
 
 div.dynamic-content {
   display: flex;
@@ -37,7 +27,7 @@ main {
   display: flex;
   flex-direction: column;
   flex: 5;
-  margin: 8em 2em 0 1.75em
+  margin: base.$fixed-margin;
 }
 
 @media screen and (max-width: 1024px) {

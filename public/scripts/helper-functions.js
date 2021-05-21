@@ -9,4 +9,4 @@ const escape = function(str) {
 const daysSince = (time) => {
   const timeAgo = timeago.format(time);
   return timeAgo;
-}
+};

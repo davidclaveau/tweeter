@@ -32,8 +32,8 @@ textarea#tweet-text {
   height: 2.5em;
   padding-top: 1em;
   width: 100%;
-  color: #3f4246;
   background-color: transparent;
+  color: #3f4246;
   border-bottom: 3px solid #3f4246;
   outline: none;
   resize: none;

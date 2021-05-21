@@ -27,12 +27,12 @@ span.title-name {
   font-size: 2em;
 }
 
-@keyframes example {
+@keyframes bounce {
   0% {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(10px);
+    transform: translateY(0.5em);
   }
   100% {
     transform: translateY(0px);
@@ -40,8 +40,7 @@ span.title-name {
 }
 i.fa-angle-double-down {
   color: red;
-  top: 0;
-  animation-name: example;
+  animation-name: bounce;
   animation-duration: 2s;
   animation-iteration-count: infinite;
 }

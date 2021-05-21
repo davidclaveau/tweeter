@@ -1,5 +1,4 @@
 $(document).ready(() => {
- 
   const loadTweets = () => {
     $.ajax({
       url: '/tweets',
@@ -7,10 +6,6 @@ $(document).ready(() => {
     })
       .then((result) => {
         renderTweets(result);
-      })
-      .catch(err => {
-        console.log('Unable to get Tweets');
-        console.log(err);
       });
   };
   

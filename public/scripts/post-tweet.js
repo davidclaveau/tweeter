@@ -21,7 +21,7 @@ $(document).ready(() => {
         <span><strong>Cannot submit an empty tweet!</strong></span>
       `).slideDown();
     } else {
-      // Reset tweet submitter and counter
+      // Reset tweet textarea and character counter
       $error.slideUp();
       $tweetText.val("");
       $counter.html("140");
@@ -30,7 +30,7 @@ $(document).ready(() => {
         method: 'POST',
         data: serialized,
       })
-        // Post tweet to the homepage
+        // Post tweet to the homepage immediately
         .then(() => {
           $.ajax({
             url: '/tweets',
@@ -40,6 +40,6 @@ $(document).ready(() => {
               renderTweets([result[result.length - 1]]);
             });
         });
-    };
+    }
   });
 });

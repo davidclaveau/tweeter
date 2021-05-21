@@ -25,20 +25,19 @@ div.write-tweet-nav {
 span.title-name {
   display: flex;
   align-items: flex-end;
-  font-family: 'Bungee', sans-serif;
+  font-family: base.$primary-font;
   font-size: 2em;
 }
 
-@keyframes example {
+@keyframes bounce {
   0%   {transform: translateY(0);}
-  50%  {transform: translateY(10px);}
+  50%  {transform: translateY(.5em);}
   100% {transform: translateY(0px);}
 }
 
 i.fa-angle-double-down {
 color: red;
-top: 0;
-animation-name: example;
+animation-name: bounce;
 animation-duration: 2s;
 animation-iteration-count: infinite;
 }

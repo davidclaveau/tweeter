@@ -16,7 +16,7 @@ const createTweetElement = (data) => {
   <article class="tweet">
     <header>
       <div class="user-name">
-        <img src="${escape(userAvatar)}">
+        <img src="${userAvatar}">
         <span>${escape(userName)}</span>
       </div>
       <span>${escape(userHandle)}</span>
@@ -25,7 +25,7 @@ const createTweetElement = (data) => {
       ${escape(contentText)}
     </p>
     <footer>
-      <span class="time-ago">${escape(createdAt)}</span>
+      <span class="time-ago">${createdAt}</span>
       <div class="options-buttons">
         <i class="fas fa-flag"></i>
         <i class="fas fa-retweet"></i>
