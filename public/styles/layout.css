@@ -42,6 +42,7 @@ div#jump-to-top {
   background-color: #4056A1;
   bottom: 0;
   right: 0;
+  cursor: pointer;
 }
 div#jump-to-top i {
   font-size: 2em;

@@ -38,7 +38,7 @@ textarea#tweet-text {
   border-bottom: 3px solid #3f4246;
   outline: none;
   resize: none;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 div.tweet-info {
