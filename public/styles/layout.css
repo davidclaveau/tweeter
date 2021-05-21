@@ -29,6 +29,18 @@ main {
   margin: 8em 2em 0 1.75em;
 }
 
+div#jump-to-top {
+  display: flex;
+  justify-content: flex-end;
+}
+div#jump-to-top a {
+  margin: 2em;
+}
+div#jump-to-top i {
+  font-size: 2em;
+  color: #4056A1;
+}
+
 @media screen and (max-width: 1024px) {
   main {
     margin: 2em 1.75em;

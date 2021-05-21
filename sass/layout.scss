@@ -30,6 +30,20 @@ main {
   margin: base.$fixed-margin;
 }
 
+div#jump-to-top {
+  display: flex;
+  justify-content: flex-end;
+  
+  a {
+    margin: 2em;
+  }
+
+  i {
+    font-size: 2em;
+    color: base.$primary-color;
+  }
+}
+
 @media screen and (max-width: 1024px) {
 
   main {
