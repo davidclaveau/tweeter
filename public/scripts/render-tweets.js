@@ -26,7 +26,7 @@ const createTweetElement = (data) => {
     </p>
     <footer>
       <span class="time-ago">${escape(createdAt)}</span>
-      <div>
+      <div class="options-buttons">
         <i class="fas fa-flag"></i>
         <i class="fas fa-retweet"></i>
         <i class="fas fa-heart"></i>

@@ -3,7 +3,9 @@
  * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
  */
-html {
+@use 'base';
+
+ html {
   box-sizing: border-box;
   font-size: 24px;
 }
@@ -17,9 +19,9 @@ html {
 
 
 body {
-  color: #545149;
+  color: base.$primary-text-color;
   background-color: #f4f1ec;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: base.$secondary-text-color;
 }
 
 /*

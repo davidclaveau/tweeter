@@ -1,11 +1,13 @@
+@use 'base';
+
 nav {
   display: flex;
   justify-content: space-between;
   position: fixed;
   height: 6em;
   width: 100%;
-  color: #FFFFFF;
-  background-color: #4056A1;
+  color: base.$secondary-text-color;
+  background-color: base.$primary-color;
   padding: 0.5em 1.5em
 }
 
@@ -24,7 +26,7 @@ span.title-name {
   display: flex;
   align-items: flex-end;
   font-family: 'Bungee', sans-serif;
-  font-size: 2rem;
+  font-size: 2em;
 }
 
 @keyframes example {

@@ -5,7 +5,6 @@ article.tweet {
   border: 3px solid #3f4246;
   margin-bottom: 1.5em;
 }
-
 article.tweet:hover {
   box-shadow: 0.3em 0.3em lightgrey;
 }
@@ -17,8 +16,7 @@ article.tweet > header {
   height: auto;
   background-color: transparent;
 }
-
-article.tweet header img {
+article.tweet > header img {
   height: 2em;
 }
 
@@ -26,7 +24,6 @@ header div.user-name {
   display: flex;
   align-items: center;
 }
-
 header div.user-name span {
   padding-left: 0.5em;
 }
@@ -37,17 +34,21 @@ article.tweet footer {
   justify-content: space-between;
   border-top: 3px solid #3f4246;
 }
-
 article.tweet footer span.time-ago {
   font-size: 0.8em;
   margin-top: 0.2em;
 }
-
-article.tweet footer div i {
+article.tweet footer div.options-buttons {
   font-size: 0.8em;
+  margin-top: 0.2em;
   cursor: pointer;
 }
-
-article.tweet footer div i:hover {
-  color: orange;
+article.tweet footer div.options-buttons .fa-flag:hover {
+  color: #e49502;
+}
+article.tweet footer div.options-buttons .fa-retweet:hover {
+  color: #4056A1;
+}
+article.tweet footer div.options-buttons .fa-heart:hover:hover {
+  color: #e01818;
 }

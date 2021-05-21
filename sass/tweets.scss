@@ -1,13 +1,18 @@
+@use 'base';
+
+$options-text-size: 0.8em;
+$options-margin: 0.2em;
+
 article.tweet {
   display: flex;
   flex-direction: column;
   padding: 0.8em;
-  border: 3px solid #3f4246;
+  border: base.$primary-border;
   margin-bottom: 1.5em;
-}
 
-article.tweet:hover {
-  box-shadow: 0.3em 0.3em lightgrey;
+  &:hover {
+    box-shadow: 0.3em 0.3em lightgrey;
+  }
 }
 
 article.tweet > header {
@@ -16,38 +21,53 @@ article.tweet > header {
   justify-content: space-between;
   height: auto;
   background-color: transparent;
-}
 
-article.tweet header img {
-  height: 2em;
+  img {
+    height: 2em;
+  }
 }
 
 header div.user-name {
   display: flex;
   align-items: center;
-}
 
-header div.user-name span {
-  padding-left: 0.5em;
+  span {
+    padding-left: 0.5em;
+  }
 }
 
 article.tweet footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border-top: 3px solid #3f4246 ;
-}
+  border-top: base.$primary-border;
 
-article.tweet footer span.time-ago{
-  font-size: 0.8em;
-  margin-top: 0.2em;
-}
+  span.time-ago{
+    font-size: $options-text-size;
+    margin-top: $options-margin;
+  }
 
-article.tweet footer div i {
-  font-size: 0.8em;
-  cursor: pointer;
-}
+  div.options-buttons {
+    font-size: $options-text-size;
+    margin-top: $options-margin;
+    cursor: pointer;
 
-article.tweet footer div i:hover {
-  color: orange
+    .fa-flag {
+      &:hover {
+          color: base.$warning-color;
+      }
+    }
+
+    .fa-retweet {
+      &:hover {
+        color: base.$primary-color;
+      }
+    }
+
+    .fa-heart:hover {
+      &:hover {
+        color: base.$error-color;
+      }
+    }
+  }  
 }
