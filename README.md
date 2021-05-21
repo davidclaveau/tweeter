@@ -7,17 +7,22 @@ This repository is the starter code for the project: Students will fork and clon
 ---
 
 ## Screenshots
+Homepage of the Tweeter app
 ![Homepage of the Tweeter app](https://raw.githubusercontent.com/davidclaveau/tweeter/master/docs/homepage.png)
 
+Select "Write a new tweet" to start tweeting!
 ![Select "Write a new tweet" to start tweeting!](https://raw.githubusercontent.com/davidclaveau/tweeter/master/docs/toggle-write-tweet-form.png)
 
+Using AJAX, posts tweet immediately to the homepage
 ![Using AJAX, posts tweet immediately to the homepage](https://raw.githubusercontent.com/davidclaveau/tweeter/master/docs/post-tweet-immediately.png)
 
+Counts the characters of the tweet; lets the user know when they're typing too much!
 ![Counts the characters of the tweet; lets the user know when they're typing too much!](https://raw.githubusercontent.com/davidclaveau/tweeter/master/docs/character-counter.png)
 
+Handles errors such as tweets too long or empty tweets
 ![Handles errors such as tweets too long or empty](https://raw.githubusercontent.com/davidclaveau/tweeter/master/docs/error-handling.png)
 
-
+Responsive design to handle varying screen types
 ![Responsive design to handle varying screen types](https://raw.githubusercontent.com/davidclaveau/tweeter/master/docs/responsive-design.png)
 
 ---
