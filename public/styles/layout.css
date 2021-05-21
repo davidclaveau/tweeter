@@ -31,14 +31,21 @@ main {
 
 div#jump-to-top {
   display: flex;
-  justify-content: flex-end;
-}
-div#jump-to-top a {
-  margin: 2em;
+  justify-content: center;
+  visibility: hidden;
+  position: fixed;
+  border-radius: 50%;
+  height: 2.2em;
+  width: 2.2em;
+  padding-top: 1px;
+  margin: 1em;
+  background-color: #4056A1;
+  bottom: 0;
+  right: 0;
 }
 div#jump-to-top i {
   font-size: 2em;
-  color: #4056A1;
+  color: #FFFFFF;
 }
 
 @media screen and (max-width: 1024px) {
